@@ -1,0 +1,65 @@
+package com.syntax.petvet;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.ImageView;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.syntax.petvet.CENTERS.CenterRegistration;
+import com.syntax.petvet.DOGWALKER.DogWalker;
+import com.syntax.petvet.DOGWALKER.DogWalkerRegistration;
+import com.syntax.petvet.USER.UserRegistration;
+
+public class RegistrationActivity extends AppCompatActivity {
+
+    ImageView center, user, dogwalker;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_registration);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+
+        center =findViewById(R.id.petcare_icon);
+        user=findViewById(R.id.user_icon);
+        dogwalker=findViewById(R.id.dogwalker_icon);
+
+        center.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), CenterRegistration.class));
+            }
+        });
+
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), UserRegistration.class));
+            }
+        });
+
+        dogwalker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), DogWalkerRegistration.class));
+            }
+        });
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+        finish();
+    }
+}
