@@ -1,0 +1,21 @@
+Users can create an account and login to the application. He/she 
+can then lookup for veterinary doctors, clinics, and pet care centers in the 
+app. Users can also search for dog walkers who will take your dog for a 
+walk at reasonable prices. This can be helpful for those who lack time to 
+walk their dogs.Users also have an option to pet centers where they can 
+leave their beloved pets for a while when they are out for a tour of when 
+they leave town for a few days.Another feature in this app is to adopt pets. 
+Users can view and browse relevant details of pets listed for adoption
+
+Admin can Approve Pets shops and veterinary centers. They keep 
+track of all the activities. They also have a complaint section in case any 
+user wishes to put up a complaint against a clinic or pet care center
+
+Center’s are veterinary clinics, pet shops etc. that are registered to the 
+project. They have functionalities based on their type. Clinics have option 
+to set working hours, service available etc. Whereas pet Shops have option 
+to put pets for adoptions and list their products.
+
+Dog walkers can enroll themselves to the project . Users can view their 
+location and their availability. Based on their requirements users can ask 
+for dog Walkers for their service.
